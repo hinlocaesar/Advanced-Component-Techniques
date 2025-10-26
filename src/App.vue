@@ -19,7 +19,10 @@ function randomize() {
 <template>
   <div class="page">
     <div></div>
-    <LoginForm v-model="userData" />
+    <LoginForm
+      v-model:username="userData.username"
+      v-model:password="userData.password"
+    />
 
     <div class="result">
       <h2>userData in Parent</h2>
